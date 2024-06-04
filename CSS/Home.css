@@ -1,0 +1,62 @@
+::-webkit-scrollbar-track {
+    background-color: #030418;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(124, 0, 91);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+body {
+    background-image: url("/assets/background.png");
+}
+
+.kosugi-regular {
+    font-family: "Kosugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: auto;
+}
+
+h1 {
+    font-size: 60px;
+    text-shadow: 1px 2.5px 4px white, 1px -2.5px 4px white;
+}
+
+.center-div {
+    padding-top: 200px;
+}
+
+.start-btn {
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: rgba(225, 225, 225, 0.3);
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: transform .2s;
+}
+
+.start-btn:hover {
+    background-color: rgb(124, 0, 91);
+    color: white;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+/* responsive */
+@media screen and (max-width: 1000px) {
+    body {
+        background-repeat: no-repeat;
+        background-size: 200vh 100vh;
+    }
+}
+
+.page-content{
+    margin-bottom: 40vh;
+}
