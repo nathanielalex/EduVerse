@@ -1,0 +1,155 @@
+::-webkit-scrollbar-track {
+    background-color: #030418;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(124, 0, 91);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+body {
+    background-image: url('../Assets/bg-without-planets.png');
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(87, 11, 11); */
+}
+
+.flex-container>div {
+    padding: 50px;
+}
+
+.judul {
+    margin-top: 50px;
+    /* margin-left: 100px; */
+}
+
+
+.course-img {
+    border-radius: 15px;
+    border: 2px solid white;
+    height: 270px;
+    width: auto;
+
+    /* margin-right: 100px; */
+    box-shadow: 2.5px 3px 4px rgba(255, 255, 255, 0.5);
+}
+
+.txt-orange {
+    color: #d2517e;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buy-btn {
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(124, 0, 91);
+    font-weight: bold;
+    transition: transform .2s;
+}
+
+.buy-btn:hover {
+    transform: scale(1.5);
+    color: rgb(124, 0, 91);
+    background-color: white;
+}
+
+.content {
+    background-color: green;
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.content1 {
+    color: white;
+    background-color: rgb(7, 23, 75);
+    width: 600px;
+    margin-right: 5%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.content2 {
+    color: white;
+    background-color: rgb(7, 23, 75);
+    padding: 20px;
+    width: 370px;
+    border-radius: 20px;
+}
+
+.kosugi-regular {
+    font-family: "Kosugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: auto;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .flex-container>div {
+        flex: 1 1 100%;
+        /* Full width on smaller screens */
+    }
+
+    .content1,
+    .content2 {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    .main-content {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .flex-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .judul {
+        text-align: center;
+        /* Center the content */
+        margin-top: 20px;
+        /* Adjust the margin */
+    }
+
+    .course-img {
+        width: 100%;
+        /* Adjust the image size */
+        height: auto;
+        margin: 0 auto;
+        /* Center the image */
+        order: -1;
+        /* Move the image above the "judul" class */
+    }
+
+    .flex-container2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content1,
+    .content2 {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+}

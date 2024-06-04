@@ -1,0 +1,262 @@
+::-webkit-scrollbar-track {
+    background-color: #030418;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(124, 0, 91);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kosugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.card-course {
+
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    background: #191e24;
+    border: 3px solid #387EB8;
+
+    overflow: hidden;
+    margin: 50px 25px 0px 25px;
+
+}
+
+.card-course img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+
+    background-color: #c9c9c9;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    margin: 12px 12px 12px 12px;
+}
+
+.card-content h1 {
+
+    margin-bottom: 12px;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.card-content>.button {
+    text-align: center;
+    width: 100%;
+    padding: 13px 0px 13px 0px;
+    display: inline-block;
+    background-color: rgba(127, 89, 166, 1);
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 16px;
+    color: white;
+    font-size: 20px;
+}
+
+.card-content>.button:hover {
+
+    background: rgb(185, 147, 214);
+    background: linear-gradient(90deg, rgba(185, 147, 214, 1) 7%, rgba(140, 166, 219, 1) 95%);
+}
+
+body {
+    background-image: url('../Assets/astronomy.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.715);
+    z-index: -1;
+}
+
+.logo-btn {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-title {
+    margin-bottom: 40px;
+}
+
+.registerBtn {
+    background-color: #951642;
+    height: 35px;
+    color: white;
+}
+
+.loginBtn {
+    border: 2px solid #951642;
+    height: 35px;
+    color: white;
+}
+
+.registerBtn:hover {
+    background-color: rgba(255, 255, 255, 0.87);
+    color: #951642;
+    font-weight: 600;
+}
+
+.loginBtn:hover {
+    background-color: rgba(255, 255, 255, 0.87);
+    color: #951642;
+    font-weight: 600;
+}
+
+.dropdownbar {
+    background-color: rgba(38, 38, 47, 255);
+    backdrop-filter: blur(10px);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(53, 53, 53, 255);
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.footer {
+    background-color: #24262b;
+    padding-top: 20px;
+    bottom: 0;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 15px;
+    margin-left: 49px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+ul {
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.footerBottom,
+.footerUpper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #24262b;
+    color: white;
+    border-top: 0.5px solid #141313;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.footerUpper {
+    border-top: 0px;
+    padding-bottom: 40px;
+}
+
+/*responsive*/
+@media (max-width: 992px) {
+    .sidebar {
+        background-color: rgba(38, 38, 47, 255);
+        backdrop-filter: blur(10px);
+    }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}

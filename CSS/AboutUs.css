@@ -1,0 +1,90 @@
+::-webkit-scrollbar-track {
+    background-color: #030418;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(124, 0, 91);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+body {
+    background-image: url("../Assets/bg-without-planets.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.main-content {
+    margin: 100px;
+    margin-top: 20px;
+}
+
+.kosugi-regular {
+    font-family: "Kosugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    line-height: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-content,
+.vision-mission,
+.why-eduverse {
+    margin-bottom: 80px;
+}
+
+.txt-orange {
+    color: #d2517e;
+    font-weight: bold;
+}
+
+.boxes {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* .boxes  p{
+    background-color: rgb(7, 23, 75);
+} */
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    margin: 20px;
+    display: flex;
+    flex-basis: 45%;
+    background-color: rgb(7, 23, 75);
+    padding: 20px;
+    align-items: center;
+}
+
+.boxes img {
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        flex-basis: 100%;
+    }
+
+    .box1 img {
+        margin-left: auto;
+    }
+}

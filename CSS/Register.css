@@ -1,0 +1,69 @@
+::-webkit-scrollbar-track {
+    background-color: #030418;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(124, 0, 91);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Kosugi&display=swap");
+
+body {
+    background: url(../Assets/Background.png);
+    font-family: 'Kosugi', sans-serif;
+}
+
+.box-area {
+    width: 930px;
+}
+
+.left-box {
+    background: #b8cdea;
+}
+
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+.rounded-4 {
+    border-radius: 20px;
+}
+
+.rounded-5 {
+    border-radius: 30px;
+}
+
+.title {
+    color: rgb(93, 151, 231);
+    font-size: 50px;
+    margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+
+    .box-area {
+        margin: 0 10px;
+    }
+
+    .left-box {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    .right-box {
+        padding: 20px;
+    }
+
+    .logo {
+        display: none;
+    }
+}
