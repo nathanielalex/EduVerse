@@ -12,7 +12,9 @@
 }
 
 body {
-    background-image: url('../Assets/bg-without-planets.png');
+    background-image: url("../Assets/bg-without-planets.png");
+    background-repeat: repeat-y;
+    background-size: cover;
 }
 
 .flex-container {
