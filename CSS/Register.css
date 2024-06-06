@@ -15,6 +15,8 @@
 
 body {
     background: url(../Assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Kosugi', sans-serif;
 }
 
